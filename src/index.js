@@ -85,7 +85,7 @@ module.exports = function(layoutData, options) {
           } else {
             source = `'${json.attrs.src}'`;
           }
-          result += `<Image className='${className}' src='${source}' />`;
+          result += `<Image className='${className}' src=${source} />`;
 
           if (!raxImport[type]) {
             raxImport[type] = `import { Image } from '@tarojs/components';`;
@@ -152,6 +152,8 @@ module.exports = function(layoutData, options) {
     printWidth: 120,
     singleQuote: true
   };
+
+  renderData.modClass = prettier.format(renderData.modClass, prettierOpt);
 
   return {
     renderData: renderData,
