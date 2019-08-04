@@ -10,10 +10,12 @@
     "vm2": "^3.5.2",
     "xml-beautifier": "^0.4.0",
     "xtemplate": "^4.6.1",
-    "xtpl": "^3.4.0"
+    "xtpl": "^3.4.0",
+    "urllib": "^2.34.0"
   },
   "scripts": {
     "test": "node ./test/index.js",
-    "mtest": "mocha test/__test__.js"
+    "mtest": "mocha test/__test__.js",
+    "get-data": "node ./test/get-data.js"
   }
 }
