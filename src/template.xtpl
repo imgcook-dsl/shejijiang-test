@@ -1,6 +1,4 @@
-'use strict';
-
-import { createElement, Component, render } from 'rax';
+import Taro, { Component, Config } from '@tarojs/taro';
 
 {{{import}}}
 
